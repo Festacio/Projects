@@ -1,5 +1,5 @@
 Hi, I’m Fernando Estácio. I'm a Computing Science student of UERJ (Universidade do Estado do Rio de Janeiro). I was born and bred
-in Brazil. I'm really passionate about computers, specially games, hardware parts (not in an in-depth kind of way) and programing.
+in Brazil. I'm really passionate about computers, specially games, hardware parts (not in an in-depth kind of way) and programming.
 
 - I’m interested in Back-end programming.
 - I’m currently learning C++ by submitting some Beecrowd programs and C# for Unity engine.
