@@ -1,5 +1,5 @@
-Hi, I’m Fernando Estácio. I'm a Computing Science student of UERJ (Universidade do Estado do Rio de Janeiro). I was born and bred
-in Brazil. I'm really passionate about computers, specially games, hardware parts (not in an in-depth kind of way) and programming.
+Hi, I’m Fernando Estácio. I'm a Computing Science student of UERJ (Universidade do Estado do Rio de Janeiro). I was born in Brazil. 
+I'm really passionate about computers, specially games, hardware parts (not in an in-depth kind of way) and programming.
 
 - I’m interested in Back-end programming.
 - I’m currently learning C++ by submitting some Beecrowd programs and C# for Unity engine.
@@ -23,7 +23,7 @@ If I had to describe what I currently know, using 1 to 10, with 7 - 10 being mor
 of programing and logic thinking. I just didn't get to use it much outside of my classes.)
 
 - Java: 3.
-(I have to admit that... I really don't like Java. But I would be open to learn it properly if any opportunity appears.)
+(I would be open to learn it properly if any opportunity appears.)
 
   
 
