@@ -8,15 +8,18 @@ I'm really passionate about computers, specially games, hardware parts (not in a
   some real world situations, using APIs, making more robust codes for security reasons, learning more good manners 
   and patterns for coding, etc.
 
-If I had to describe what I currently know, using 1 to 10, with 7 - 10 being more specific knowledge about the subject.
+If I had to describe what I currently know, using 1 to 10, with 1 - 6 being the basics and 7 - 10 being more specific knowledge about the subject.
 
 - English level: 7. 
 (My speech is really rusty.)
 
-- C: 5.
-- C++: 6.
+- Logical reasoning: 6.
+(My logical thinking is pretty solid in my opinion, but I would'nt go as far as to say that it's flawless or something like that. I have yet much to learn and see.)
+
+- C: 4.
+- C++: 5.
 - C#: 5.
-(Call me crazy, but I like C and its family.)
+(I like C and its family.)
 
 - Python: 4.
 (I think Python is a very good language, it's accessible, it's massive popular nowadays and it even is a great starting point for the basics 
