@@ -18,8 +18,8 @@ If I had to describe what I currently know, using 1 to 10, with 1 - 6 being the 
 - C#: 4. (Used it while learning to mess with the Unity engine.)
 
 - Python: 4.
-(I think Python is a very good language, it's accessible, it's massive popular nowadays and it even is a great starting point for the basics 
-of programing and logic thinking. I just didn't get to use it much outside of my classes.)
+(I think Python is a very good language, it's accessible, it's massively popular nowadays and a great starting point for the basics 
+of programing and logical thinking. I just didn't get to use it much outside of my classes.)
 
 - Java: 3.
 (I would be open to learn it properly if any opportunity appears.)
