@@ -1,12 +1,9 @@
 Hi, I’m Fernando Estácio. I'm a Computing Science student of UERJ (Universidade do Estado do Rio de Janeiro). I was born in Brazil. 
 I'm really passionate about computers, specially games, hardware parts (not in an in-depth kind of way) and programming.
 
-- I’m interested in Back-end programming.
-- I’m currently learning C++ by submitting some Beecrowd programs and C# for Unity engine.
-
 - I’m currently looking for an internship on any back-end related area, so I can get some professional experience and a taste of
   some real world situations, using APIs, making more robust codes for security reasons, learning more good manners 
-  and patterns for coding, etc.
+  and patterns for coding, working with other people, etc.
 
 If I had to describe what I currently know, using 1 to 10, with 1 - 6 being the basics and 7 - 10 being more specific knowledge about the subject.
 
@@ -14,12 +11,11 @@ If I had to describe what I currently know, using 1 to 10, with 1 - 6 being the 
 (My speech is really rusty.)
 
 - Logical reasoning: 6.
-(My logical thinking is pretty solid in my opinion, but I would'nt go as far as to say that it's flawless or something like that. I have yet much to learn and see.)
+(My logical thinking is pretty solid in my opinion, but I wouldn't go as far as to say that it's flawless or anything like that. I still have much to learn.)
 
 - C: 4.
-- C++: 5.
-- C#: 5.
-(I like C and its family.)
+- C++: 5. (Used it in most of my classes, but not as an object oriented language, that's why I gave me a 5 instead of a 6.)
+- C#: 4. (Used it while learning to mess with the Unity engine.)
 
 - Python: 4.
 (I think Python is a very good language, it's accessible, it's massive popular nowadays and it even is a great starting point for the basics 
