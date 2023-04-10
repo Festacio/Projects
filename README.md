@@ -8,7 +8,6 @@ I'm really passionate about computers, specially games, hardware parts (not in a
 If I had to describe what I currently know, using 1 to 10, with 1 - 6 being the basics and 7 - 10 being more specific knowledge about the subject.
 
 - English level: 7. 
-(My speech is really rusty.)
 
 - Logical reasoning: 6.
 (My logical thinking is pretty solid in my opinion, but I wouldn't go as far as to say that it's flawless or anything like that. I still have much to learn.)
