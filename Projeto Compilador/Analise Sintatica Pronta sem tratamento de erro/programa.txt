@@ -1,0 +1,9 @@
+local function TestaSintaxe (a, b, c)
+   for teste = 0, teste<=10, teste + 2 do
+      if ((teste - 5) > 0) then
+         a = teste;
+      else
+         a = a * 2;
+      end;
+   end;
+end;
