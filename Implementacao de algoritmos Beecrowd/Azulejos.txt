@@ -1,0 +1,48 @@
+#include <iostream>
+
+using namespace std;
+
+
+long long int MDC(long long int a, long long int b){
+  if(b==0){
+    return a;
+  }else{
+    return MDC(b,a%b);
+  }
+}
+
+long long int quantosMultiplos(long long int n, long long int a){
+
+  if(a<n){
+    /*int cont = 0;
+    for(int i = a; i<n; i+=a){
+      cont+=1;
+    }
+    return cont;*/
+    return n/a;
+  }else{
+    return 0;
+  }  
+}
+
+int main() {
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL);
+  cout.tie(NULL);
+
+  long long int a,b,n,mmc,contA=0,contB=0,contMMC=0;
+  cin>>n;
+  cin>>a;
+  cin>>b;
+  
+  while((n>=3 && n<=1000000000)&& a>=2 && b<=n){
+    mmc = (a*b)/MDC(a,b);
+    cout<<quantosMultiplos(n,a)+quantosMultiplos(n,b)-quantosMultiplos(n,mmc)<<endl;
+    
+    cin>>n;
+    cin>>a;
+    cin>>b;
+  }
+  
+  return 0;
+}

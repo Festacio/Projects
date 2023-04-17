@@ -1,0 +1,77 @@
+#include <iostream>
+#include<math.h>
+using namespace std;
+
+double pontos[101][2];
+
+int main() {
+
+  int l;
+  double x,y,x1,y1,x2,y2,a,b,c,resultado = 1000000,resprov = 0;
+
+  scanf("%d",&l);
+
+  while(l!=0){
+    
+    for(int i = 0; i<l; i++){
+      
+      scanf("%lf",&pontos[i][0]);
+      scanf("%lf",&pontos[i][1]);
+      
+    }
+
+    for(int i = 0; i<l; i++){
+      
+      x1=pontos[i][0];
+      y1=pontos[i][1];
+      
+      for(int j = 0; j<l; j++){
+        
+        x2=pontos[j][0];
+        y2=pontos[j][1];
+        
+        if(j!=i){
+
+          c = (x1*y2)-(y1*x2);
+          b = (x2)-(x1);  
+          a = (y1)-(y2);
+          
+          for(int k = 0; k<l; k++){
+            
+            x = pontos[k][0];
+            y = pontos[k][1];
+            
+            if(k!=j && k!=i){
+              
+              if((a*x+ c)/-b > y){
+                resprov -= fabs(a*x + b*y + c)/sqrt(a*a + b*b);
+              }else{
+                resprov += fabs(a*x + b*y + c)/sqrt(a*a + b*b);
+              } 
+              
+            }
+            
+          }
+          
+          resprov = fabs(resprov);
+
+          if(resprov<resultado){
+            resultado = resprov;
+            resprov = 0;
+          }else{
+            resprov = 0;
+          }          
+          //aqui acaba k
+        }
+        
+      }
+      
+    }
+    
+    printf("%.3lf\n",resultado);
+    resultado = 10000000;
+    scanf("%d",&l);
+  }
+  
+  return 0;
+}

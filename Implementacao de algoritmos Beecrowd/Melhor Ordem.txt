@@ -1,0 +1,58 @@
+#include <iostream>
+#include <algorithm>
+#include <array>
+
+using namespace std;
+
+array<int, 500001> ni;
+int t[500001],o[500001],m;
+
+int BuscaBinaria(int ini,int fim, int x){
+  if(ini > fim){
+    return ini;
+  }else{
+    m = (ini + fim)/2;
+    if(t[m]<x){
+      return BuscaBinaria(m+1,fim,x);
+    }else{
+      return BuscaBinaria(ini,m-1,x);
+    }
+  }
+}
+  
+void SCM(int n){
+  
+  int k = 1, j;
+  t[1] = ni[0];
+  o[1] = 1;
+  
+  for(int i = 1; i<n; i++){
+    if(ni[i]>t[k]){
+      k++;
+      t[k] = ni[i];
+      o[i] = k;
+      
+    }else{
+      j = BuscaBinaria(1,k,ni[i]);
+      t[j] = ni[i];
+      o[i] = j;  
+    }
+  }
+
+  cout<<k<<endl;
+}
+
+
+int main() {
+
+  int n,aux;
+  while (scanf("%d",&n)>0){
+    for(int i = 0; i<n;i++){
+      scanf("%d",&ni[i]);
+    }
+    
+    SCM(n);
+  }
+
+  return 0;
+}

@@ -1,0 +1,25 @@
+#include <iostream>
+
+int main() {
+  
+  double a=1,b,c,d,resultado;
+
+  scanf("%lf",&a);
+  scanf("%lf",&b);
+  scanf("%lf",&c);
+  scanf("%lf",&d);
+  
+  while(a!=0){
+    
+    resultado = (((a/2)+b)/d)*c;
+    printf("%.5lf\n",resultado);
+
+    
+    scanf("%lf",&a);
+    scanf("%lf",&b);
+    scanf("%lf",&c);
+    scanf("%lf",&d);
+  }
+  
+  return 0;
+}

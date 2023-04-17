@@ -1,0 +1,65 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+long long int MDC(long long int a, long long int b){
+  if(b==0){
+    return a;
+  }else{
+    return MDC(b,a%b);
+  }
+}
+
+int main() {
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL);
+  cout.tie(NULL);  
+
+  string s;
+  cin>>s;
+  
+  int letras[27];
+  
+  
+  long long int fact[10001], m = 100000007, res = 0, n = s.length(), div = 1;
+  
+  fact[0] = 1;
+  for (int i=1;i<=10001;i++){
+    fact[i] = (fact[i-1]*i)%m;
+    if(i<=26){
+      letras[i] = 0;    
+    }
+    
+  }    
+  
+  while(s!="0"){ 
+    res = 0;
+    div = 1;
+    for (int i = 0; i<n; i++){
+      letras[s[i]-96]+=1;
+    }
+    //res = fact[n]%m;
+    for(int i = 1; i<=26; i++){
+
+      if(letras[i]==n){
+        div = fact[n];
+        letras[i]=0;
+        break;
+      }
+      else if(letras[i]>1){
+        //div = (div%m*fact[letras[i]]%m)%m;
+        div += MDC(div,fact[letras[i]])%m;
+        letras[i] = 0;
+        
+      }else
+        letras[i] = 0;
+      }
+    
+    cout<<(fact[n]/div)%m<<endl;
+    cin>>s;
+    n = s.length();
+  }
+  
+  return 0;
+}

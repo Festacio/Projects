@@ -1,0 +1,139 @@
+#include <iostream>
+
+using namespace std;
+
+char table[1000][1000];
+int resposta[10000],cont = 0;
+
+string andaNaTabela(int n, int x0, int y0, string caminho){
+  string aux;
+  string caminho_cri = "";
+  caminho_cri=table[y0][x0];
+
+  if(n == 0){
+    return caminho_cri;
+  }else{
+    
+    for (int i = 0; i<n; i++){
+      if (caminho[i]=='E'){
+        y0+=1;
+        aux = table[y0][x0];
+        caminho_cri += aux;
+      }else if (caminho[i]=='W'){
+        y0-=1;
+        aux = table[y0][x0];
+        caminho_cri += aux;    
+      }else if (caminho[i]=='N'){
+        x0-=1;
+        aux = table[y0][x0];
+        caminho_cri += aux;   
+      }else{
+        x0+=1;
+        aux = table[y0][x0];
+        caminho_cri += aux;     
+      }    
+    }
+    //cout<<caminho_cri<<endl;
+    return caminho_cri;
+  }  
+}
+
+void SCM(string a, string b){
+  
+  int t[1000][1000];
+  for(int i=0; i<a.length(); i++){
+    t[i][0] = 0;
+  }
+  for(int i=0; i<b.length(); i++){
+    t[0][i] = 0;
+  }
+  for(int i=1; i<=a.length(); i++){
+    for(int j=1; j<=b.length(); j++){
+      
+      if(a[i-1] == b[j-1]){
+        
+        t[i][j] = t[i-1][j-1] +1;
+        
+      }else{
+        
+        if(t[i-1][j] < t[i][j-1]){
+          t[i][j] = t[i][j-1];
+          
+        }else{
+          t[i][j] = t[i-1][j];
+          
+        }        
+      }
+    }
+  }
+
+  resposta[cont]= a.length()-t[a.length()][b.length()];
+  cont++;
+  resposta[cont]=b.length()-t[a.length()][b.length()];
+  cont++;
+   
+}
+
+int main() {
+
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL);
+  cout.tie(NULL);
+
+  
+  int t=0,k=0,j=0,h=0,w=0,n=0,x0=0,y0=0;
+  char input[1000];
+  scanf("%d",&t);
+
+  string caminho,cri1, cri2;;
+  
+  while(k<t){
+    scanf("%d",&h);
+    scanf("%d",&w);
+    for (int i = 0; i<h;i++){
+      while(j<w){
+        cin>>table[j][i];
+        j++;
+      }
+      j=0;
+    }
+    scanf("%d",&n);
+    scanf("%d",&x0);
+    scanf("%d",&y0);
+    if(n>0){
+      scanf("%999s",input);
+    }else{
+      cin >> noskipws >> input;
+    }  
+    caminho = input;
+    cri1 = andaNaTabela(n,x0-1,y0-1,caminho);
+
+    scanf("%d",&n);
+    scanf("%d",&x0);
+    scanf("%d",&y0);
+    if(n>0){
+      scanf("%999s",input);
+    }else{
+      cin >> noskipws >> input;
+    }  
+    caminho = input;
+    cri2 = andaNaTabela(n,x0-1,y0-1,caminho);
+      
+    SCM(cri1,cri2);
+    k++;
+  }
+  
+  int ini = 0;
+  for(int i = 0; i<t; i++){
+    cout<<"Case "<<i+1<<": ";
+    for (int j = ini; j<ini+2; j++){
+      if(j==ini){
+        cout<<resposta[j]<<" ";
+      }else{
+        cout<<resposta[j]<<endl;
+      }
+    }
+    ini+=2;
+  }
+  return 0;
+}

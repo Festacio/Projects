@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL);
+  cout.tie(NULL);
+
+  long long int n,resultado[101];
+  cin>>n;
+
+  resultado[1]=1;
+  
+  for (int i = 2; i<101; i++){
+    resultado[i] = (resultado[i-1] + i*i) ;
+  }
+  
+  while(n>0){
+    cout<<resultado[n]<<endl; 
+    cin>>n;  
+  }
+  
+  return 0;
+}

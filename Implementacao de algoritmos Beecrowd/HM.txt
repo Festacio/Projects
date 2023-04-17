@@ -1,0 +1,48 @@
+#include <iostream>
+
+using namespace std;
+
+long long int expRapida( long long int r){
+  
+  if (r==0){
+    return 1;
+    
+  }
+    long long int n = expRapida(r/2);
+    if (r%2==1){
+      return (expRapida(r-1)*2)%1000000007;
+    }
+    return (n*n)%1000000007;
+   
+}
+
+int main() {
+  
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL);
+  cout.tie(NULL);
+
+  long long int n = 0, h = 0, m = 0, result;
+  string arara;
+
+  cin>>arara;
+
+  for(int i = 0; i<arara.length();i++){
+    
+    if(arara[i]=='M'){
+      m++;
+    }else{
+      h++;
+    }
+    if(m==h){
+      n++;
+      m=0;
+      h=0;
+    }
+    
+  }
+
+  cout<<expRapida(n-1)<<endl;
+    
+  return 0;
+}

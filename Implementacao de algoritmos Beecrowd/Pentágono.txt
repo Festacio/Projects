@@ -1,0 +1,20 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+#define PI  3.14159265358979323846
+
+int main() {
+
+  int i = 0,c;
+  scanf("%d", &c);
+  double n,h;
+  
+  while(i<c){
+    scanf("%lf", &n);
+    h = sin(54.0*PI/180.0)/(sin(36.0*PI/180.0)/(n/2.0));
+    printf("%.3lf\n",5*((n*h)/2.000));
+    i++;
+  }
+  return 0;
+}

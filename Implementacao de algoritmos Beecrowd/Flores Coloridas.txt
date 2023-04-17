@@ -1,0 +1,26 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main() {
+
+  double a,b,c,acirc,atriang,acircmaior,s,p;
+  while(scanf("%lf",&a)>0){  
+    scanf("%lf",&b);
+    scanf("%lf",&c);
+    
+    s = (a+b+c)/2.0;
+    p = sqrt(s*(s-a)*(s-b)*(s-c));
+    
+    acirc = M_PI*(p/s)*(p/s);
+
+    atriang = p - acirc;
+
+    acircmaior = M_PI*(a*b*c/(4.0*p))*(a*b*c/(4.0*p))-atriang - acirc;
+    
+    printf("%.4lf %.4lf %.4lf\n",acircmaior,atriang,acirc);
+    
+  }
+  return 0;
+}

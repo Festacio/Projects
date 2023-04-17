@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL);
+  cout.tie(NULL);
+
+  long long int n, fact[100001], m = 1000000009;
+  cin>>n;
+
+  fact[0] = 1;
+  for (int i=1;i<=100001;i++){
+      fact[i] = (fact[i-1]*i)%m;
+  }    
+  
+  while(n>2){
+    cout<<(fact[n]*833333341)%m<<endl;
+    //cout<<fact[n]/6<<endl;
+    cin>>n;
+  }
+  return 0;
+}

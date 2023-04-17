@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL);
+  cout.tie(NULL);
+
+  long long int n, m=1000007;
+  cin>>n;
+  //333336 250002 83334
+
+  while(n>0){
+    cout<<((11*(n*n)+(n*n*n*n))%m*83334)%m<<endl;
+    cin>>n;
+    
+  }
+  
+  return 0;
+}

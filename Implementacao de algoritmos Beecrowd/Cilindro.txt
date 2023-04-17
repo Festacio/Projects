@@ -1,0 +1,37 @@
+#include <iostream>
+#include <math.h>
+
+int main() {
+  
+  double w,h,r1,v1,v2,r2,x;
+
+  scanf("%lf",&w);
+  scanf("%lf",&h);
+  
+  while(w!=0){
+    
+    r1 = w/(M_PI*2);
+    x = h/(2*M_PI+2);
+
+    if(w/2.0>x){
+      r2=x;
+    }else{
+      r2=w/2.0;
+    }
+
+    v1 = M_PI*r1*r1*(h-(2.0*r1));
+    v2 = M_PI*r2*r2*w;
+    
+    if(v1>v2){
+      printf("%.3lf\n",v1);
+    }else{
+      printf("%.3lf\n",v2);
+    } 
+    
+    scanf("%lf",&w);
+    scanf("%lf",&h);
+
+  }
+  
+  return 0;
+}

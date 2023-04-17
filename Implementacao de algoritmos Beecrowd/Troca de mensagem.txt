@@ -1,0 +1,94 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+string trocaMensagem(char k[45], string frase){
+  int j = 0;
+  char resposta[frase.length()];
+  
+  for(int i = 0; i<frase.length();i++){
+    //cout<<k[j];
+    if(i==0 && (frase[i]==97 ||frase[i]==101 ||frase[i]==105 ||frase[i]==111 ||frase[i]==117) ){
+      while(frase[i] != 32 && frase[i] != 0){
+        resposta[i]=frase[i];
+        //cout<<resposta[i];
+        i++;
+      }
+    }
+    if(i>0 && frase[i-1]==32 && (frase[i]==97 ||frase[i]==101 ||frase[i]==105 ||frase[i]==111 ||frase[i]==117)){
+        while(frase[i] != 32 && frase[i] != 0){
+          resposta[i]=frase[i];
+          //cout<<resposta[i];
+          i++;
+        }  
+      }
+    if(frase[i]==32){
+      resposta[i] = 32;
+      //cout<<resposta[i];
+            
+    }else if (k[j+1]!='\0'){
+      if(k[j]+frase[i]-97<=122){
+        resposta[i]=k[j]+frase[i]-97;
+        //cout<<resposta[i];
+        j++;
+        
+      }else{
+        resposta[i]=k[j]+frase[i]-123;
+        //cout<<resposta[i];
+        j++;
+      }  
+      
+    }else{
+      
+      if(k[j]+frase[i]-97<=122){
+        resposta[i]=k[j]+frase[i]-97;
+        //cout<<resposta[i];
+        j=0;
+        
+      }else{
+        resposta[i]=k[j]+frase[i]-123;
+        //cout<<resposta[i];
+        j=0;
+        
+      }      
+    }
+  }
+  //cout<<endl;
+  return resposta;
+}
+
+int main() {
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL);
+  cout.tie(NULL);
+
+  int n,j = 0;
+  char k[45];  
+  cin>>k;
+  cin>>n;
+  //cout<<k<<endl;
+  
+  if(k[2]!='\0' && (n>=1||n<=150)){
+    string frases[n+1],frases_trocadas[n];
+    string imprime;
+    
+    for(int i = 0; i<=n; i++){
+      frases[i]="";
+      getline(cin, frases[i]);
+      if (i>=1){
+        frases_trocadas[i-1]=trocaMensagem(k,frases[i]);
+      }
+    }
+    for(int i = 0; i<n; i++){
+      imprime = frases_trocadas[i];
+      while(imprime[j]==32 || imprime[j]>=97){
+        cout<<imprime[j];
+        j++;
+      }
+      j=0;
+      cout<<endl;
+    }
+  }
+  return 0;
+}

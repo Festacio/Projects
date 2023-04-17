@@ -1,0 +1,46 @@
+#include <iostream>
+#include <math.h>
+#include <string>
+
+using namespace std;
+
+int nForaINT(int b){
+  if(b%9==0){
+    return 9;
+  }else{
+    return b%9;
+  }
+}
+
+int nForaSTR(string b){
+  int n = 0;
+  
+  for(int i = 0; i<b.length(); i++){
+    n+=int(b[i])-48;
+  }
+  if(to_string(n).length()>1){
+    n = nForaSTR(to_string(n));
+  }
+  return n;
+}
+
+void printaSolucao(int k, string e){
+  int n=1;
+  for(int i=0; i<e.length();i++){
+    n = nForaINT(pow(n,10));
+    n = nForaINT(n*pow(k, int(e[i])-48));
+  }
+  cout << n << endl;
+}
+
+int main() {
+  
+  string b, e;
+  int resultado;
+  cin >> b;
+  cin >> e;
+
+  printaSolucao(nForaSTR(b),e);  
+ 
+  return 0;
+}

@@ -1,0 +1,36 @@
+#include <iostream>
+
+using namespace std;
+
+long long int num_calls = 0;
+
+long long int fib(long long int x){
+  num_calls+=1;
+  if(x==0){
+    return 0;
+  }else if(x==1){
+    return 1;
+  }else{
+    return fib(x-1)+fib(x-2);
+  }
+}
+
+int main() {
+    
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL);
+  cout.tie(NULL);
+
+  int n,i = 0;
+  long long int result,x;
+
+  cin>>n;
+  while(i<n){
+    cin>>x;
+    result = fib(x);
+    cout<<"fib("<<x<<") = "<<num_calls-1<<" calls = "<<result<<endl;
+    num_calls=0;
+  }
+  
+  return 0;
+}
