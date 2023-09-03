@@ -12,8 +12,8 @@ If I had to describe what I currently know, using 1 to 10, with 1 - 6 being the 
 (My logical thinking is pretty solid in my opinion, but I wouldn't go as far as to say that it's flawless or anything like that. I still have much to learn.)
 
 - C: 4.
-- C++: 5. (Used it in most of my classes, but not as an object oriented language, that's why I gave it a 5 instead of a 6.)
-- C#: 4. (Used it while learning to mess with the Unity engine.)
+- C++: 5. 
+- C#: 4. (Used it while learning to mess with Unity engine.)
 
 - Python: 4.
 (I think Python is a very good language, it's accessible, it's massively popular nowadays and a great starting point for the basics 
