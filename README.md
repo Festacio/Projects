@@ -1,5 +1,5 @@
 Hi, I’m Fernando Estácio. I'm a Computer Science student in UERJ (Universidade do Estado do Rio de Janeiro). 
-I'm really passionate about computers, specially games, hardware parts (not in an in-depth kind of way) and programming.
+I'm really passionate about computers, specially games, hardwares (pricing, specs and pc-building) and programming.
 
 - I’m currently looking for an internship on any IT related area (outside of front-end stuff), so I can get some professional experience and a taste of
   some real world situations, making more robust codes for security reasons, learning how everything works together, working with other people, etc.
