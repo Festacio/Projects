@@ -1,8 +1,5 @@
-Hi, I’m Fernando Estácio. I'm a Computer Science student in UERJ (Universidade do Estado do Rio de Janeiro). 
+Hi, I’m Fernando Estácio. I'm a Computer Science student at UERJ (Universidade do Estado do Rio de Janeiro). 
 I'm really passionate about computers, specially games, hardwares (pricing, specs and pc-building) and programming.
-
-- I’m currently looking for an internship on any IT related area (outside of front-end stuff), so I can get some professional experience and a taste of
-  some real world situations, making more robust codes for security reasons, learning how everything works together, working with other people, etc.
 
 If I had to describe what I currently know, using 1 to 10, with 1 - 6 being the basics and 7 - 10 being more specific knowledge about the subject.
 
