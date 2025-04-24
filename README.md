@@ -5,7 +5,7 @@ If I had to describe what I currently know, using 1 to 10, with 1 - 6 being the 
 
 - English level: 7. 
 
-- Logical reasoning: 6. (My logical thinking is pretty solid, in my opinion. But I probably have much to learn, yet.)
+- Logical reasoning: 6. (My logical thinking is pretty solid, in my opinion. But I still have much to learn)
 
 - C: 4.
 - C++: 5. 
